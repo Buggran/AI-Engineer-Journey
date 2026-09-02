@@ -36,3 +36,16 @@ where.exe python
 
 
 
+-----prompt engineering ---
+Role, Task, Context, (Inputs), Output Format
+
+----AI System -------
+AI System =
+Model + Prompts + RAG + Tools + Workflows + Evaluation
+
+
+-----  Agent ------
+LLM + Functions (Tools) + Workflow + Decision Making
+
+The architecture matters more than the model.
+

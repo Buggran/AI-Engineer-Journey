@@ -1,3 +1,5 @@
+from theme_extractor import extract_themes
+
 def identify_themes(comments):
 
     themes = []
@@ -42,7 +44,10 @@ def generate_recommendations(themes):
 
 def analyze_comments(comments):
 
-    themes = identify_themes(comments)
+    # themes = identify_themes(comments)
+    # themes = extract_themes(comments)
+    theme_result = extract_themes(comments)
+    themes = theme_result["themes"]
 
     sentiment = calculate_sentiment(comments)
 

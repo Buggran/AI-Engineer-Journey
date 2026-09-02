@@ -16,7 +16,17 @@ Future Enhancements:
 - Power BI Integration
 
 
+
+
+
+
+
+
+
+
+
 --------------------------------------------  Rough  --------------------------------------
+
 My journey from Customer Insights Analyst to AI Engineer.
 
 ## Goals

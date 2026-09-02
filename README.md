@@ -1,5 +1,22 @@
 # AI Engineer Journey
+# CX Survey Analyzer
 
+Purpose:
+Analyze survey comments and generate structured output.
+
+Current Features:
+- Theme Extraction
+- Sentiment Placeholder
+- Recommendations
+- JSON Output
+
+Future Enhancements:
+- Azure OpenAI Integration
+- RAG
+- Power BI Integration
+
+
+--------------------------------------------  Rough  --------------------------------------
 My journey from Customer Insights Analyst to AI Engineer.
 
 ## Goals

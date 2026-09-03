@@ -1,12 +1,5 @@
 {
     "overall_sentiment": "Mixed",
-    "themes": [
-        "Advisor Experience",
-        "Website Experience",
-        "Mobile Experience"
-    ],
-    "recommendations": [
-        "Improve website usability",
-        "Improve mobile experience"
-    ]
+    "themes": [],
+    "recommendations": []
 }

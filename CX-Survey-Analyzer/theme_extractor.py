@@ -1,4 +1,5 @@
 import json
+
 from llm_client import generate
 
 
@@ -7,47 +8,47 @@ def build_theme_prompt(comments):
     comment_text = "\n".join(comments)
 
     prompt = f"""
-You are a Customer Experience Analyst.
+        You are a Customer Experience analyst.
 
-Analyze the survey comments below.
+        Analyze these survey comments.
 
-Identify the top customer experience themes.
+        Return ONLY valid JSON.
 
-Return JSON in this format:
+        Comments:
+        {comments}
 
-{{
-    "themes": []
-}}
+        Required JSON format:
 
-Survey Comments:
-{comment_text}
+        {{
+            "overall_sentiment": "",
+            "theme_count": 0,
+            "positive_themes": [],
+            "negative_themes": [],
+            "themes": [
+                {{
+                    "theme": "",
+                    "sentiment": "",
+                    "evidence": []
+                }}
+            ],
+            "recommendations": []
+        }}
 """
+
 
     return prompt
 
 
 def extract_themes(comments):
 
-    try:
+    prompt = build_theme_prompt(comments)
 
-        prompt = build_theme_prompt(comments)
+    print("\nPROMPT SENT TO AI:\n")
 
-        print("\nPROMPT SENT TO AI:")
-        print(prompt)
+    response_text = generate(prompt)
 
-        # Send prompt to LLM
-        ai_response = generate(prompt)
+    print(response_text)
 
-        # Convert JSON string into Python dictionary
-        data = json.loads(ai_response)
+    data = json.loads(response_text)
 
-        # Return structured result
-        return data
-
-    except Exception as e:
-
-        print(f"Theme extraction failed: {e}")
-
-        return {
-            "themes": []
-        }
+    return data

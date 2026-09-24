@@ -1,5 +1,39 @@
 {
     "overall_sentiment": "Mixed",
-    "themes": [],
+    "themes": [
+        {
+            "theme": "Advisor expertise and trust",
+            "sentiment": "positive",
+            "evidence": [
+                "My advisor was extremely knowledgeable.",
+                "I trust my advisor."
+            ],
+            "summary": "Customers value the advisor's knowledge and trustworthiness."
+        },
+        {
+            "theme": "Advisor responsiveness",
+            "sentiment": "positive",
+            "evidence": [
+                "The advisor responded quickly."
+            ],
+            "summary": "Customers appreciate the advisor's fast response time."
+        },
+        {
+            "theme": "Website usability issues",
+            "sentiment": "negative",
+            "evidence": [
+                "The website is difficult to use."
+            ],
+            "summary": "Customers find the website hard to navigate and use."
+        },
+        {
+            "theme": "Mobile experience frustrations",
+            "sentiment": "negative",
+            "evidence": [
+                "The mobile experience is frustrating."
+            ],
+            "summary": "Customers are frustrated with the mobile experience."
+        }
+    ],
     "recommendations": []
 }

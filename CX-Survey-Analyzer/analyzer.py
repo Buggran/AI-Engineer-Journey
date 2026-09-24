@@ -42,21 +42,14 @@ def generate_recommendations(themes):
     return recommendations
 
 
+import json
+from theme_extractor import extract_themes
+
+
 def analyze_comments(comments):
 
-    # themes = identify_themes(comments)
-    # themes = extract_themes(comments)
     theme_result = extract_themes(comments)
-    themes = theme_result["themes"]
 
-    sentiment = calculate_sentiment(comments)
+    # result = json.loads(theme_result)
 
-    recommendations = generate_recommendations(
-        themes
-    )
-
-    return {
-        "overall_sentiment": sentiment,
-        "themes": themes,
-        "recommendations": recommendations
-    }
+    return theme_result

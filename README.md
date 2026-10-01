@@ -75,4 +75,3 @@ Model + Prompts + RAG + Tools + Workflows + Evaluation
 LLM + Functions (Tools) + Workflow + Decision Making
 
 The architecture matters more than the model.
-
